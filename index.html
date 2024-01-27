@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        * {
+            font-family: roboto;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        button {
+            padding: 30px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 40px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="checkVote()">Check My Voting Status</button>
+    <script>
+        function checkVote() {
+            if (prompt("Enter your Age") >= 18) {
+                alert("You can vote");
+            } else {
+                alert("You cannot vote");
+            }
+        }
+    </script>
+</body>
+
+</html>
